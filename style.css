@@ -52,6 +52,30 @@ ul {
     display: none;
 }
 
+#nav-menu-mobile {
+    display: none;
+}
+
+.nav-link-mobile {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.nav-mobile-btn {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    background-color: #ffde59;
+    color: #000080;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .nav-container-desktop {
         display: block;
@@ -92,6 +116,12 @@ ul {
     .nav-menu-desktop {
         font-size: .8rem;
         cursor: pointer;
+        padding: .5rem;
+    }
+    
+    .nav-menu-desktop:hover {
+        border-radius: 10px;
+        background-color: #f2f7ff;
     }
 
     .nav-btn {
@@ -729,5 +759,599 @@ ul {
     .why-card img {
         width: 50px;
     }
+}
 
+#testimony {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    overflow: hidden;
+}
+
+.section-testimony-title {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #262626;
+}
+
+.testimony-slider {
+    margin-top: 2rem;
+    display: flex;
+    overflow-x: visible;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimony-card {
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    border: 1px solid #fffff1;
+    flex: 0 0 100%;
+}
+
+.testimony-card > p {
+    font-size: small;
+    color: #2d2d2d;
+    text-align: center;
+    padding: 0 .3rem;
+}
+
+.testimony-user-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: .8rem;
+    gap: 1rem;
+}
+
+.testimony-user-img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.testimony-user-name {
+    font-size: small;
+    font-weight: 600;
+}
+
+.testimony-user-position {
+    font-size: x-small;
+    font-weight: 300;
+    color: #787878;
+}
+
+.testimony-indicator-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+    align-items: center;
+}
+
+.testimony-indicator {
+    height: 3px;
+    background-color: #cccccc;
+    border-radius: 30px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimony-indicator-current {
+    height: 3px;
+    background-color: #172ca3;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+.testimony-control {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.testimony-control > button {
+    padding: .5rem;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    color: white;
+    font-size: medium;
+    background-color: #172ca3;
+    cursor: pointer;
+}
+
+.testimony-control > button:hover {
+    background-color: #0f1f8b;
+}
+
+.btn-prev {
+    margin-right: .3rem;
+}
+
+@media (min-width: 1025px) {
+    #testimony {
+        margin: 5rem 0;
+        padding: 0 7rem;
+    }
+
+    .section-testimony-title {
+        font-size: 1.6rem;
+    }
+
+    .testimony-slider {
+        margin-top: 3rem;
+        transition: transform .5s ease-in-out;
+        gap: 2rem;
+    }
+
+    .testimony-card {
+        flex: 1 0 33.33%;
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+        height: 230px;
+        border: 1px solid #fffff9;
+    }
+
+    .testimony-card > p {
+        flex-grow: 1;
+        font-size: small;
+        color: #2d2d2d;
+        padding: 1rem;
+    }
+
+    .testimony-indicator-container {
+        margin-top: 3rem;
+    }
+
+    .testimony-indicator {
+        width: 100%;
+    }
+}
+
+#form {
+    margin-top: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.section-form-title {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #262626;
+}
+
+.section-form-subtitle {
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 400;
+    color: #414141;
+    margin-top: .5rem;
+    line-height: 1.5;
+}
+
+.form-container {
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.label-input {
+    font-size: .9rem;
+    font-weight: 600;
+    color: #414141;
+}
+
+.input, .collab-need {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #d6d6d6;
+    font-size: .7rem;
+    outline: none;
+}
+
+.whatsapp-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.flag-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: .5rem;
+}
+
+.icon-flag {
+    margin-right: .5rem;
+}
+
+.country-code {
+    font-size: .7rem;
+    color: #787878;
+}
+
+.input-field {
+    font-size: .7rem;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.input-field::placeholder {
+    color: #bbb;
+}
+
+.collab-need {
+    color: #787878;
+    /* Hides default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkbox-input {
+    transform: scale(1.5);
+}
+
+.checkbox-group > p {
+    font-size: .9rem;
+    color: #787878;
+}
+
+.checkbox-group > p > a {
+    color: #172ca3;
+    font-weight: 600;
+}
+
+.btn-form-submit {
+    margin-top: 1.5rem;
+    padding: .5rem;
+    background-color: #a7a6a6;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.required {
+    color: rgb(213, 1, 1);
+    display: none;
+}
+
+@media (min-width: 1025px) {
+    #form {
+        margin-top: 7rem;
+    }
+
+    .section-form-title {
+        font-size: 1.7rem;
+    }
+
+    .section-form-subtitle {
+        font-size: .8rem;
+    }
+
+    .form-container {
+        margin-top: 3rem;
+        padding: 0 12rem;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+
+    .form-group {
+        gap: .2rem;
+    }
+
+    .label-input {
+        font-size: .8rem;
+        font-weight: 700;
+    }
+
+    .input {
+        font-size: .8rem;
+        padding-left: 2rem;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+    }
+
+    .whatsapp-input {
+        padding-left: 2rem;
+    }
+
+    .country-code {
+        font-size: .8rem;
+    }
+
+    .input-field {
+        font-size: .8rem;
+        margin-left: 1rem;
+    }
+
+    .collab-group, .checkbox-group, .btn-form-submit {
+        grid-column: span 2;
+    }
+
+    .checkbox-group {
+        gap: .5rem;
+        justify-content: center;
+    }
+
+    .checkbox-input {
+        transform: scale(1.1);
+    }
+
+    .checkbox-group > p {
+        font-size: .7rem;
+        color: #787878;
+    }
+
+    .btn-form-submit {
+        text-transform: uppercase;
+        width: fit-content;
+        padding: .8rem 8rem;
+        font-size: .85rem;
+        justify-self: center;
+        letter-spacing: 1px;
+        margin-top: 1rem;
+    }
+
+    .required {
+        display: inline;
+    }
+}
+
+#faq {
+    margin-top: 2rem;
+    background-color: #f0f5ff;
+    padding: 3rem 2rem;
+}
+
+.section-faq-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dropdown-container {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.dropdown-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.dropdown-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.question {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #414141;
+}
+
+.icon-chevron-up {
+    display: none;
+}
+
+.icon-chevron-down {
+    display: none;
+}
+
+.icon-chevron-up:hover, .icon-chevron-down:hover {
+    color: #1579d6;
+}
+
+.answer {
+    margin-top: 1rem;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #787878;
+    display: none;
+    transition: transform .5s ease-in-out;
+}
+
+.active {
+    display: block;
+}
+
+@media (min-width: 1025px) {
+    #faq {
+        margin-top: 6rem;
+        padding: 5rem;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+        display: flex;
+    }
+
+    .section-faq-title {
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    .dropdown-container {
+        margin-top: 0;
+        width: 100%;
+    }
+}
+
+#footer {
+    padding: 2rem .7rem;
+    background-color: #d3d6e0;
+    color: #373840;
+}
+
+.footer-content {
+    display: grid;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-info-detail {
+    padding-right: 1rem;
+}
+
+.footer-info-detail > h3 {
+    font-size: 1.1rem;
+}
+
+.footer-info-detail > p {
+    font-size: .8rem;
+    line-height: 2;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer-socmed-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.socmed-icon {
+    font-size: 1.7rem;
+    border-radius: 50%;
+    color: #717171;
+}
+
+.footer-links-container {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-program, .footer-business, .footer-about, .footer-others {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.footer-link {
+    font-size: .8rem;
+}
+
+.hr-line {
+    height: 1px;
+    background-color: #a7a6a6;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-info-detail>p {
+        font-size: .8rem;
+        padding-right: 20rem;
+    }
+    .footer-links-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-about, .footer-others {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 1025px) {
+    #footer {
+        padding: 2.5rem 6rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-logo {
+        width: 180px;
+    }
+
+    .footer-links-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-info-detail > h3 {
+        font-size: 1rem;
+    }
+
+    .footer-info-detail > p {
+        font-size: .7rem;
+        font-weight: 500;
+        padding-right: 15rem;
+    }
+
+    .footer-socmed-container {
+        gap: .8rem;
+    }
+
+    .socmed-icon {
+        font-size: 1.5rem;
+    }
+
+    .footer-links-container {
+        margin-top: 0;
+    }
+
+    .footer-program > h4, .footer-about > h4, .footer-others > h4, .footer-business > h4 {
+        font-size: .8rem;
+    }
+
+    .footer-others {
+        grid-column: 3;
+    }
+
+    .footer-link {
+        font-size: .7rem;
+    }
+
+    .copyright-text {
+        font-size: .9rem;
+    }
 }

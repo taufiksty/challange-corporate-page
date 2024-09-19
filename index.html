@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1.0">
     <title>Corporate</title>
     <link rel="icon"
-          href="./assets/logo/logo.jpeg">
+          href="./assets/logo/logo.png">
     <link rel="stylesheet"
           href="style.css">
     <script src="https://kit.fontawesome.com/2eff019df6.js"
@@ -25,7 +25,7 @@
         <div class="nav-container-desktop">
             <div class="nav-title-container">
                 <img class="nav-logo-desktop"
-                     src="assets/logo/logo.jpeg"
+                     src="assets/logo/logo.png"
                      alt="logo-hicolleagues">
                 <h1 class="nav-title">CORPORATE SERVICE</h1>
             </div>
@@ -43,6 +43,17 @@
             </div>
         </div>
     </nav>
+
+    <div id="nav-menu-mobile">
+        <ul class="nav-link-mobile-container">
+            <li class="nav-link-mobile">Acceleration Program</li>
+            <li class="nav-link-mobile">Corp Collaboration</li>
+            <li class="nav-link-mobile">Corp Training</li>
+            <li class="nav-link-mobile">Talent as a Service</li>
+            <li class="nav-link-mobile">Tech Service</li>
+        </ul>
+        <button class="nav-mobile-btn">MASUK</button>
+    </div>
 
     <main>
         <section id="hero">
@@ -349,6 +360,284 @@
                 </div>
             </div>
         </section>
+
+        <section id="testimony">
+            <h2 class="section-testimony-title">Testimoni Kepuasan Klien Kami</h2>
+            <div class="testimony-slider">
+                <div class="testimony-card">
+                    <p>"Setelah mengikuti pembelajaran Vue.JS dari team HiColleagues selama 2 minggu ini sangat berkesan
+                        dan banyak ilmu yang
+                        didapat, mulai dari yang belum mengenal Vue.JS sampai mengetahui fundamental...</p>
+                    <div class="testimony-user-container">
+                        <img class="testimony-user-img"
+                             src="./assets/logo/logo.png"
+                             alt="">
+                        <div class="testimony-user-data-container">
+                            <p class="testimony-user-name">Zainuddin</p>
+                            <p class="testimony-user-position">Pegawai IT, PLN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony-card">
+                    <p>"Materi yang dibawakan mudah dipahami dan materinya up-to-date sehingga bisa diimplementasikan di
+                        PLN untuk real project,
+                        dan semoga kedepan bisa bekerjasama kembali dengan...</p>
+                    <div class="testimony-user-container">
+                        <img class="testimony-user-img"
+                             src="./assets/logo/logo.png"
+                             alt="">
+                        <div class="testimony-user-data-container">
+                            <p class="testimony-user-name">Abdan Nafik</p>
+                            <p class="testimony-user-position">Pegawai IT, PLN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony-card">
+                    <p>"Trainer membawakan materi dengan sangat jelas, metode pembelajaran yang up to date dan mengikuti
+                        zaman now. Untuk materi
+                        yang disampaikan sudah mencangkup semua baik native yang diperlukan...</p>
+                    <div class="testimony-user-container">
+                        <img class="testimony-user-img"
+                             src="./assets/logo/logo.png"
+                             alt="">
+                        <div class="testimony-user-data-container">
+                            <p class="testimony-user-name">Raden Teja</p>
+                            <p class="testimony-user-position">Software Developer, Bank Jatim</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony-card">
+                    <p>"Materi yang dibawakan sangat bermanfaat dikarenakan memang secara personal belum pernah
+                        mengetahui teori mengenai UI/UX
+                        dan praktikum yang diajarkan sangat aplikatif sekali sehingga mudah...</p>
+                    <div class="testimony-user-container">
+                        <img class="testimony-user-img"
+                             src="./assets/logo/logo.png"
+                             alt="">
+                        <div class="testimony-user-data-container">
+                            <p class="testimony-user-name">Stephan Christianus</p>
+                            <p class="testimony-user-position">Project Manager, PT Altama Surya Anugerah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony-card">
+                    <p>"Menambah ilmu pengetahuan tentang database, pelatihan, dan sertifikasi yang kami ikuti berjalan
+                        dengan baik & fast
+                        response. Dan akhirnya kami dapat lulus semua saat ujian sertifikasi Microsoft Azure...</p>
+                    <div class="testimony-user-container">
+                        <img class="testimony-user-img"
+                             src="./assets/logo/logo.png"
+                             alt="">
+                        <div class="testimony-user-data-container">
+                            <p class="testimony-user-name">Aldy Rakhman Kurniawan</p>
+                            <p class="testimony-user-position">IT Developer, Bank Jatim</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimony-indicator-container">
+                <div class="testimony-indicator">
+                    <div class="testimony-indicator-current"></div>
+                </div>
+                <div class="testimony-control">
+                    <button id="btn-testimony-prev"
+                            class="btn-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="btn-testimony-next"
+                            class="btn-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="form">
+            <h2 class="section-form-title">Formulir Pendaftaran Konsultasi</h2>
+            <p class="section-form-subtitle">Langkah tepat optimasi bisnis melalui layanan Corporate Service bersama
+                HiColleagues</p>
+
+            <div class="form-container">
+                <form action=""
+                      class="form">
+                    <div class="form-group">
+                        <label for="name"
+                               class="label-input">Nama Perusahaan<span class="required">*</span></label>
+                        <input type="text"
+                               id="name"
+                               class="input"
+                               placeholder="Masukkan Nama Perusahaan"
+                               required />
+                    </div>
+                    <div class="form-group">
+                        <label for="website"
+                               class="label-input">Website Perusahaan</label>
+                        <input type="text"
+                               id="website"
+                               class="input"
+                               placeholder="Masukkan Alamat Website Perusahaan" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pic-name"
+                               class="label-input">Nama Lengkap PIC<span class="required">*</span></label>
+                        <input type="text"
+                               id="pic-name"
+                               class="input"
+                               placeholder="Masukkan Nama Lengkap PIC"
+                               required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pic-email"
+                               class="label-input">Email PIC<span class="required">*</span></label>
+                        <input type="text"
+                               id="pic-email"
+                               class="input"
+                               placeholder="Masukkan Email PIC"
+                               required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pic-occupation"
+                               class="label-input">Okupasi PIC</label>
+                        <input type="text"
+                               id="pic-occupation"
+                               class="input"
+                               placeholder="Masukkan Okupasi PIC" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pic-phone"
+                               class="label-input">No. Whatsapp PIC<span class="required">*</span></label>
+                        <div class="whatsapp-input">
+                            <div class="flag-container">
+                                <i class="fa-solid fa-flag-checkered icon-flag"></i>
+                                <span class="country-code">+62</span>
+                            </div>
+                            <input type="text"
+                                   id="whatsapp-pic"
+                                   class="input-field"
+                                   placeholder="Masukkan No. Whatsapp PIC"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="form-group collab-group">
+                        <label for="collab-need"
+                               class="label-input">Kebutuhan Kolaborasi<span class="required">*</span></label>
+                        <select name="collab-need"
+                                id="collab-need"
+                                class="collab-need"
+                                required>
+                            <option value=""
+                                    disabled
+                                    selected
+                                    hidden>Pilih Layanan Kolaborasi / Kemitraan</option>
+                            <option value="Corporate Collaboration">Corporate Collaboration</option>
+                            <option value="Corporate Training">Corporate Training</option>
+                            <option value="Talent as a Service">Talent as a Service</option>
+                            <option value="Tech Service">Tech Service</option>
+                        </select>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox"
+                               class="checkbox-input">
+                        <p>Dengan mengirim formulir ini saya menyetujui <a>Syarat & Ketentuan</a> untuk melakukan
+                            kemitraan/kolaborasi bersama HiColleagues</p>
+                    </div>
+                    <button type="submit"
+                            disabled
+                            class="btn-form-submit">Kirim</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2 class="section-faq-title">Frequently Asked Question</h2>
+            <div class="dropdown-container">
+                <div class="dropdown-item">
+                    <div class="dropdown-question">
+                        <p class="question">Di mana program corporate training HiColleagues diadakan?</p>
+                        <i class="fa-solid fa-chevron-up icon-chevron-up"></i>
+                        <i class="fa-solid fa-chevron-down icon-chevron-down active"></i>
+                    </div>
+                    <p class="answer">Program corporate training HiColleagues dapat diadakan secara offline di lokasi
+                        Anda, di salah
+                        satu fasilitas pelatihan
+                        HiColleagues, atau secara online.</p>
+                </div>
+                <div class="dropdown-item">
+                    <div class="dropdown-question">
+                        <p class="question">Bagaimana HiColleagues merancang program corporate training?</p>
+                        <i class="fa-solid fa-chevron-up icon-chevron-up"></i>
+                        <i class="fa-solid fa-chevron-down icon-chevron-down active"></i>
+                    </div>
+                    <p class="answer">Kami berkolaborasi dengan klien untuk memahami kebutuhan dan tujuan pelatihan
+                        mereka. Kemudian merancang program yang
+                        disesuaikan menggunakan berbagai metode pembelajaran yang inovatif disertai kurikulum yang
+                        berbasis industri.</p>
+                </div>
+                <div class="dropdown-item">
+                    <div class="dropdown-question">
+                        <p class="question">Berapa lama program corporate training HiColleagues berlangsung?</p>
+                        <i class="fa-solid fa-chevron-up icon-chevron-up"></i>
+                        <i class="fa-solid fa-chevron-down icon-chevron-down active"></i>
+                    </div>
+                    <p class="answer">Durasi program corporate training HiColleagues bervariasi dari beberapa jam hingga
+                        beberapa hari yang disesuaikan dengan
+                        kebutuhan perusahaan dan kompleksitas materi yang diajarkan.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="./assets/logo/logo-with-name.png"
+                         alt="logo-hicolleagues"
+                         class="footer-logo">
+                    <div class="footer-info-detail">
+                        <h3>PT Generasi Anak Muda Berkarya</h3>
+                        <p>Grand Slipi Tower Jl. Letjen S. Parman Kav. 22-24, Palmerah, Jakarta Barat, DKI Jakarta 11480
+                        </p>
+                    </div>
+                    <div class="footer-socmed-container">
+                        <i class="fa-brands fa-square-instagram socmed-icon"></i>
+                        <i class="fa-brands fa-facebook socmed-icon"></i>
+                        <i class="fa-brands fa-linkedin socmed-icon"></i>
+                        <i class="fa-brands fa-tiktok socmed-icon"></i>
+                    </div>
+                </div>
+                <div class="footer-links-container">
+                    <div class="footer-program">
+                        <h4>Program HiColleagues</h4>
+                        <a class="footer-link">Bootcamp</a>
+                        <a class="footer-link">Public Training</a>
+                        <a class="footer-link">Prakerja</a>
+                        <a class="footer-link">Kampus Merdeka</a>
+                        <a class="footer-link">Event</a>
+                    </div>
+                    <div class="footer-business">
+                        <h4>HiColleagues Bisnis</h4>
+                        <a class="footer-link">Corporate Service</a>
+                        <a class="footer-link">Acceleration Program</a>
+                        <a class="footer-link">Corporate Collaboration</a>
+                        <a class="footer-link">Corporate Training</a>
+                        <a class="footer-link">Talent as a Service</a>
+                        <a class="footer-link">Technology Service</a>
+                    </div>
+                    <div class="footer-about">
+                        <h4>Tentang HiColleagues</h4>
+                        <a class="footer-link">Tentang Kami</a>
+                        <a class="footer-link">Hubungi Kami</a>
+                        <a class="footer-link">Portofolio</a>
+                        <a class="footer-link">Artikel</a>
+                        <a class="footer-link">FAQ</a>
+                    </div>
+                    <div class="footer-others">
+                        <h4>Lain-lain</h4>
+                        <a class="footer-link">Kebijakan Privasi</a>
+                        <a class="footer-link">Syarat & Ketentuan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line"></div>
+            <div class="footer-copyright">
+                <p class="copyright-text">Copyright © 2024 - PT Generasi Anak Muda Berkarya</p>
+            </div>
+        </footer>
     </main>
 
     <script src="script.js"></script>
