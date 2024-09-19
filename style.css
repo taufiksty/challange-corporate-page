@@ -1178,10 +1178,6 @@ form {
     display: none;
 }
 
-.icon-chevron-down {
-    display: none;
-}
-
 .icon-chevron-up:hover, .icon-chevron-down:hover {
     color: #1579d6;
 }

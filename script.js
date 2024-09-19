@@ -143,8 +143,13 @@ dropdownItems.forEach((item) => {
     const iconChevronDown = item.querySelector(".icon-chevron-down");
     question.addEventListener("click", () => { 
         answer.classList.toggle("active");
-        iconChevronUp.classList.toggle("active");
-        iconChevronDown.classList.toggle("active");
+        if (answer.classList.contains("active")) { 
+            iconChevronUp.style.display = "block";
+            iconChevronDown.style.display = "none";
+        } else {
+            iconChevronUp.style.display = "none";
+            iconChevronDown.style.display = "block";
+        }
     });
 })
 
